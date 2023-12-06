@@ -4,8 +4,11 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "cd src && nodemon server.js",
+    "start": "cd src && node server.js",
     "dev": "nodemon server.js"
   },
   "author": "",
