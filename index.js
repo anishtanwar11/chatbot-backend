@@ -2,12 +2,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // FOR CONNECT DATABASE
-import { dbConnect } from './configs/database.config.js';
+import { dbConnect } from './src/configs/database.config.js';
 dbConnect();
 
 import express from "express";
 import cors from 'cors';
-import { callChain } from "./utils/callChain.js";
+import { callChain } from "./src/utils/callChain.js";
 import { HumanMessage, AIMessage } from "langchain/schema";
 
 const app = express();
